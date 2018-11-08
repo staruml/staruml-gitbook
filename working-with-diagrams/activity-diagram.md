@@ -5,7 +5,7 @@ Activity Diagram
 
 ## Create Activity Diagram
 
-To create a Activity Diagram:
+To create an Activity Diagram:
 
 1. Select first an element where a new Activity Diagram to be contained as a child.
 2. Select **Model | Add Diagram | Activity Diagram** in Menu Bar or select **Add Diagram | Activity Diagram** in Context Menu.
