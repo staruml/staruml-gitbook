@@ -14,6 +14,9 @@ To create a Sequence Diagram:
 >
 > [UML Sequence Diagram](http://www.uml-diagrams.org/sequence-diagrams.html) - For more information about UML Sequence Diagram.
 
+You can show or hide sequence numbers of messages. To show or hide sequence numbers of message:
+
+1. Check or Uncheck `showSequenceNumber` property of **Sequence Diagram** or **Communication Diagram**.
 
 ## Lifeline
 
@@ -67,6 +70,11 @@ You can change the kind of message by setting `messageSort` property in **Proper
 * `createMessage` : Create Message
 * `deleteMessage` : Delete Message
 * `reply` : Reply Message
+
+You can use custom sequence numbers instead of auto-generated integer sequence numbers.
+
+1. Enter sequence number for each Message's `sequenceNumber` property.
+2. Change `sequenceNumbering` property of **Sequence Diagram** or **Communication Diagram** to `custom`.
 
 You can use **QuickEdit** for Message by double-click or press `Enter` on a selected Message.
 

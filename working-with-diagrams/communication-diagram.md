@@ -15,6 +15,11 @@ To create a Communication Diagram:
 >
 > [UML Communication Diagram](http://www.uml-diagrams.org/communication-diagrams.html) - For more information about UML Communication Diagram.
 
+You can show or hide sequence numbers of messages. To show or hide sequence numbers of message:
+
+1. Check or Uncheck `showSequenceNumber` property of **Sequence Diagram** or **Communication Diagram**.
+
+
 ## Lifeline
 
 To create a Lifeline:
@@ -83,5 +88,10 @@ To create a Reverse Message:
 
 1. Select **Reverse Message** in **Toolbox**.
 2. Click on a Connector.
+
+You can use custom sequence numbers instead of auto-generated integer sequence numbers.
+
+1. Enter sequence number for each Message's `sequenceNumber` property.
+2. Change `sequenceNumbering` property of **Sequence Diagram** or **Communication Diagram** to `custom`.
 
 You can use **QuickEdit** for Message (See [Message](/working-with-diagrams/sequence-diagram.md#message)).
