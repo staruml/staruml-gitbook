@@ -58,7 +58,7 @@ View > Previous Diagram | `Cmd+Shift+[` | `Ctrl+Shift+[` | `Ctrl+Shift+[`
 View > Zoom In | `Cmd++` | `Ctrl++` | `Ctrl++`
 View > Zoom Out | `Cmd+-` | `Ctrl+-` | `Ctrl+-`
 View > Actual Size | `Cmd+0` | `Ctrl+0` | `Ctrl+0`
-View > Fit To Window | `Cmd+Alt+0` | `Ctrl+Alt+0` | `Ctrl+Alt+0`
+View > Fit To Window | `Cmd+Alt+1` | `Ctrl+Alt+1` | `Ctrl+Alt+1`
 View > Show Grid | `Cmd+G` | `Ctrl+G` | `Ctrl+G`
 View > Sidebar | `Cmd+1` | `Ctrl+1` | `Ctrl+1`
 View > Navigator | `Cmd+2` | `Ctrl+2` | `Ctrl+2`
