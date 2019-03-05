@@ -195,6 +195,17 @@ You can use **QuickEdit** for Template Parameter by double-click or press `Enter
 * **Move Up** (`Ctrl+Up`) : Move the template parameter up.
 * **Move Down** (`Ctrl+Down`) : Move the template parameter down.
 
+
+## Template Parameter Substitution
+
+To add a Template Parameter Substituion:
+
+1. Select a Template Binding element.
+2. Select **Model | Add | Template Parameter Substitution** in Menu Bar or **Add | Template Parameter Substitution** in Context Menu.
+
+Each **Template Parameter Substitution** should have `formal` property assigned to a **Template Parameter** of the template element and `actual` property assigned to the actual value for the template parameter.
+
+
 ## Interface
 
 To create an Interface:
@@ -459,6 +470,21 @@ To create an Association Class by linking Association and Class:
 1. Select **Association Class** in **Toolbox**.
 2. Drag from an Association (or Class) and drop on a Class (or Association).
 3. The Class will be connected to the Association.
+
+## Template Binding
+
+To create a Template Binding:
+
+1. Select **Template Binding** in **Toolbox**.
+2. Drag from a bound element and drop on a template element.
+3. If required, create [Template Parameter Substitution](#template-parameter-substitution).
+
+You can use **QuickEdit** for Template Binding by double-click or press `Enter`.
+
+* **Visibility** : Change visibility property.
+* **Add Note** : Add a linked note.
+* **Add Template Parameter** : Add a template parameter substitution.
+
 
 ## Frame
 

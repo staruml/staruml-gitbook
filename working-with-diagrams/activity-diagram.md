@@ -262,9 +262,24 @@ You can use **QuickEdit** for Relationship (See [Relationship](/working-with-dia
 
 ## Object Flow
 
-To create a Object Flow:
+To create an Object Flow:
 
 1. Select **Object Flow** in **Toolbox**.
 2. Drag from a node and drop on another node.
+
+## Exception Handler
+
+To create an Extension Handler:
+
+1. Select **Extension Handler** in **Toolbox**.
+2. Drag from a node and drop on another node.
+
+## Activity Interrupt
+
+To create an Activity Interrupt:
+
+1. Select **Activity Interrupt** in **Toolbox**.
+2. Drag from a node and drop on another node.
+
 
 You can use **QuickEdit** for Relationship (See [Relationship](/working-with-diagrams/class-diagram.md#relationship)).
