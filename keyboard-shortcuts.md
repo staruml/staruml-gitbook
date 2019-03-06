@@ -88,14 +88,15 @@ Here is an example:
 
 ```js
 {
-  "cmdctrl-alt-1": null,  // release 'Ctrl(Cmd)-Alt-1' key binding
-  "cmdctrl-alt-g": "view:show-grid" // Change key binding of 'View > Show Grid' to Ctrl(Cmd)-Alt-G.
+  "cmdctrl-alt-1": null,
+  "cmdctrl-alt-g": "view:show-grid"
 }
 ```
+
+The first entry is to release the `Ctrl(or Cmd)-Alt-1` key binding and the second entry is to change key binding of **View > Show Grid** (Command ID is `view:show-grid`) to `Ctrl(or Cmd)-Alt-G`.
 
 If you want to know all command IDs, enter the following expression at **Console** (Debug > Show DevTools > Console tab).
 
 ```js
 Object.keys(app.commands.commands)
 ```
-
