@@ -15,7 +15,7 @@ A command may have a corresponding keyboard shortcut. You can define key binding
 
 Key binding should be a combination of following keys with `-` separator.
 * __Character literals__ : `a`, `1`, `,`, ...
-* __Modifier keys__ : `ctrl`, `cmd`, `shift`, `alt`, `cmdctrl` (`cmdctrl` is automatically recognized in `cmd` in MacOS and `ctrl` in Windows and Linux)
+* __Modifier keys__ : `ctrl`, `cmd`, `shift`, `alt`, `cmdctrl` (`cmdctrl` is automatically recognized in `cmd` in MacOS and `ctrl` in Windows and Linux and `alt` is corresponds to **option** key in MacOS)
 * __Special keys__ : `enter`, `space`, `up`, `down`, `left`, `right`, `delete`, `tab`, `escape`, `backspace`, `home`, `end`, `pageup`, `pagedown`
 
 The key bindings is shown in menu items of the same commands automatically.

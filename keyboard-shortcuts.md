@@ -29,8 +29,8 @@ Format > Fill Color | `Cmd+Shift+I` | `Ctrl+Shift+I` | `Ctrl+Shift+I`
 Format > Line Color| `Cmd+Shift+L` | `Ctrl+Shift+L` | `Ctrl+Shift+L`
 Format > Line Style > Rectilinear | `Cmd+L` | `Ctrl+L` | `Ctrl+L`
 Format > Line Style > Oblique | `Cmd+B` | `Ctrl+B` | `Ctrl+B`
-Format > Line Style > RoundRect | `Cmd+Alt+L` | `Ctrl+Alt+L` | `Ctrl+Alt+L`
-Format > Line Style > Curve | `Cmd+Alt+B` | `Ctrl+Alt+B` | `Ctrl+Alt+B`
+Format > Line Style > RoundRect | `Cmd+Option+L` | `Ctrl+Alt+L` | `Ctrl+Alt+L`
+Format > Line Style > Curve | `Cmd+Option+B` | `Ctrl+Alt+B` | `Ctrl+Alt+B`
 Format > Auto Resize | `Cmd+Shift+R` | `Ctrl+Shift+R` | `Ctrl+Shift+R`
 Format > Show Shadow | `Cmd+Shift+H` | `Ctrl+Shift+H` | `Ctrl+Shift+H`
 Format > Stereotype Display > None | `Cmd+Shift+0` | `Ctrl+Shift+0` | `Ctrl+Shift+0`
@@ -60,7 +60,7 @@ View > Previous Diagram | `Cmd+Shift+[` | `Ctrl+Shift+[` | `Ctrl+Shift+[`
 View > Zoom In | `Cmd++` | `Ctrl++` | `Ctrl++`
 View > Zoom Out | `Cmd+-` | `Ctrl+-` | `Ctrl+-`
 View > Actual Size | `Cmd+0` | `Ctrl+0` | `Ctrl+0`
-View > Fit To Window | `Cmd+Alt+1` | `Ctrl+Alt+1` | `Ctrl+Alt+1`
+View > Fit To Window | `Cmd+Option+1` | `Ctrl+Alt+1` | `Ctrl+Alt+1`
 View > Show Grid | `Cmd+G` | `Ctrl+G` | `Ctrl+G`
 View > Sidebar | `Cmd+1` | `Ctrl+1` | `Ctrl+1`
 View > Navigator | `Cmd+2` | `Ctrl+2` | `Ctrl+2`
@@ -68,11 +68,11 @@ View > Toolbar | `Cmd+3` | `Ctrl+3` | `Ctrl+3`
 View > Statusbar | `Cmd+4` | `Ctrl+4` | `Ctrl+4`
 View > Toolbox | `Cmd+5` | `Ctrl+5` | `Ctrl+5`
 View > Editors | `Cmd+6` | `Ctrl+6` | `Ctrl+6`
-View > Diagram Thumbnails | `Cmd+Alt+T` | `Ctrl+Alt+T` | `Ctrl+Alt+T`
-View > Markdown Documentation | `Cmd+Alt+D` | `Ctrl+Alt+D` | `Ctrl+Alt+D`
-View > Minimap | `Cmd+Alt+M` | `Ctrl+Alt+M` | `Ctrl+Alt+M`
-View > Relationships | `Cmd+Alt+R` | `Ctrl+Alt+R` | `Ctrl+Alt+R`
-Debug > Show DevTools | `Shift+Alt+T` | `Shift+Alt+T` | `Shift+Alt+T`
+View > Diagram Thumbnails | `Cmd+Option+T` | `Ctrl+Alt+T` | `Ctrl+Alt+T`
+View > Markdown Documentation | `Cmd+Option+D` | `Ctrl+Alt+D` | `Ctrl+Alt+D`
+View > Minimap | `Cmd+Option+M` | `Ctrl+Alt+M` | `Ctrl+Alt+M`
+View > Relationships | `Cmd+Option+R` | `Ctrl+Alt+R` | `Ctrl+Alt+R`
+Debug > Show DevTools | `Shift+Option+T` | `Shift+Alt+T` | `Shift+Alt+T`
 Debug > Reload | `Cmd+R` | `Ctrl+R` | `Ctrl+R`
 
 ## Making Custom Keymaps
@@ -93,7 +93,7 @@ Here is an example:
 }
 ```
 
-The first entry is to release the `Ctrl(or Cmd)-Alt-1` key binding and the second entry is to change key binding of **View > Show Grid** (Command ID is `view:show-grid`) to `Ctrl(or Cmd)-Alt-G`.
+The first entry is to release the `Ctrl+Alt+1` (`Cmd+Option+1` in MacOS) key binding and the second entry is to change key binding of **View > Show Grid** (Command ID is `view:show-grid`) to `Ctrl+Alt+G` (`Cmd+Option+G` in MacOS).
 
 If you want to know all command IDs, enter the following expression at **Console** (Debug > Show DevTools > Console tab).
 
