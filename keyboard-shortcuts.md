@@ -1,6 +1,8 @@
 Keyboard Shortcuts
 ==================
 
+## Default Keymaps
+
 Command | MacOS | Windows | Linux
 ------- | ----- | ------- | ------ 
 File > New | `Cmd+N` | `Ctrl+N` | `Ctrl+N`
@@ -73,5 +75,27 @@ View > Relationships | `Cmd+Alt+R` | `Ctrl+Alt+R` | `Ctrl+Alt+R`
 Debug > Show DevTools | `Shift+Alt+T` | `Shift+Alt+T` | `Shift+Alt+T`
 Debug > Reload | `Cmd+R` | `Ctrl+R` | `Ctrl+R`
 
+## Making Custom Keymaps
 
+If you want to make custom keymaps, you can create `keymap.json` at the user configuration path:
+- `/Users/<user>/Library/Application Support/StarUML` for Mac OS.
+- `C:\Users\<user>\AppData\Roaming\StarUML` for Windows.
+- `~/.config/StarUML` for Linux.
+
+You can get how to edit the custom keymap file (`keymap.json`) at [Keymaps](/developing-extensions/keymaps.md).
+
+Here is an example:
+
+```js
+{
+  "cmdctrl-alt-1": null,  // release 'Ctrl(Cmd)-Alt-1' key binding
+  "cmdctrl-alt-g": "view:show-grid" // Change key binding of 'View > Show Grid' to Ctrl(Cmd)-Alt-G.
+}
+```
+
+If you want to know all command IDs, enter the following expression at **Console** (Debug > Show DevTools > Console tab).
+
+```js
+Object.keys(app.commands.commands)
+```
 
