@@ -53,7 +53,7 @@ To uninstall an extension manually:
 
 ## Update Extension
 
-To uninstall an extension:
+To update an extension:
 
 1. Show **Extension Manager** by selecting **Tools | Extension Manager...**.
 2. Select **Registry** button.
