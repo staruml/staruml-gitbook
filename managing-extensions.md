@@ -41,7 +41,7 @@ To uninstall an extension:
 3. Find an extension to uninstall by search.
 4. Press **Remove** button of the extension.
 
-To install an extension manually:
+To uninstall an extension manually:
 
 1. Go to the extensions path.
     * `/Users/<user>/Library/Application Support/StarUML/extensions/user` for Mac OS.
