@@ -77,10 +77,16 @@ Debug > Reload | `Cmd+R` | `Ctrl+R` | `Ctrl+R`
 
 ## Making Custom Keymaps
 
-If you want to make custom keymaps, you can create `keymap.json` at the user configuration path:
-- `/Users/<user>/Library/Application Support/StarUML` for Mac OS.
-- `C:\Users\<user>\AppData\Roaming\StarUML` for Windows.
-- `~/.config/StarUML` for Linux.
+If you want to make custom keymaps, you can create an extension with a `keymap.json` file.
+
+ create a new directory for your extension:
+- `/Users/<user>/Library/Application Support/StarUML/extensions/[anyExtensionName]` for Mac OS.
+- `C:\Users\<user>\AppData\Roaming\StarUML\extensions\[anyExtensionName]` for Windows.
+- `~/.config/StarUML/[anyExtensionName]` for Linux.
+
+Add a `keymaps` directory: `../[yourExtension]/keymaps`
+Put a `keymap.json` file in that directory: `../[yourExtension]/keymaps/keymap.json` 
+Put an empty main.js file at '../[yourExtension]/main.js`
 
 You can get how to edit the custom keymap file (`keymap.json`) at [Keymaps](/developing-extensions/keymaps.md).
 
