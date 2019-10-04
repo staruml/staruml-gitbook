@@ -36,7 +36,7 @@ A **fragment** is a part of a project saved as a separate file with the extensio
 
 ## Profile
 
-UML (Unified Modeling Language) is so general-purpose modeling language that could be used to express any kinds of software-intensive systems. In this reason, using UML for a specific domain or platform is not sufficient, so you may need to define UML Profile. StarUML provides UML profiles which can be used to expand UML. For example, UML profiles can be used for the following purposes.
+UML (Unified Modeling Language) is a general-purpose modeling language that could be used to express any kinds of software-intensive systems. In this reason, using UML for a specific domain or platform is not sufficient, so you may need to define UML Profile. StarUML provides UML profiles which can be used to expand UML. For example, UML profiles can be used for the following purposes.
 
 * Profiles for specific programming languages (C/C++, Java, C#, Python, etc.)
 * Profiles for specific development methodologies (RUP, Catalysis, UML Components, etc.)
