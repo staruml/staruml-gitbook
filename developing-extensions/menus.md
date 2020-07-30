@@ -1,11 +1,8 @@
-Menus
-=====
+# Menus
 
-<!-- toc -->
+Menus are defined in one or more JSON files. A menu file can define or extend **application menu** and **context menus**. All menu files are loaded in alphabetical order.
 
-Menus are defined in one or more JSON files. A menu file can define or extend __application menu__ and __context menus__. All menu files are loaded in alphabetical order.
-
-```json
+```javascript
 {
   "menu": [],
   "context-menu": []
@@ -14,7 +11,7 @@ Menus are defined in one or more JSON files. A menu file can define or extend __
 
 The menu JSON files should be placed in `menus/` folder of the extension.
 
-```
+```text
 my-extension/
 └─ menus/
    └─ menu.json
@@ -28,10 +25,9 @@ Now we're going to explain how to add menu items in application menu that is pla
 
 We will add a top-level menu item `Menu1` and three sub menu items `Sub Menu1`, `Sub Menu2` and `Sub Menu3`. There will be a separator between `Sub Menu2` and `Sub Menu3`.
 
-We assumes that the commands corresponds to menu items were already defined. To add commands, please refer [Adding Commands](adding-commands.md).
+We assumes that the commands corresponds to menu items were already defined. To add commands, please refer [Adding Commands](https://github.com/staruml/staruml-gitbook/tree/a4e7d94a6d3e900751c092bd56ef0f5f8b857276/developing-extensions/adding-commands.md).
 
-
-```json
+```javascript
 {
   "menu": [
     {
@@ -62,27 +58,27 @@ We assumes that the commands corresponds to menu items were already defined. To 
 
 Each menu item may have following properties:
 
-* __id__ : Unique id of the menu item. If `id` is omitted, `command` id will be used for the id.
-* __label__ : Label for the menu item.
-* __command__ : A command id to be executed when the menu item selected.
-* __submenu__ : Submenu items of this menu item.
-* __type__ : Type of the menu item. One of the values `separator` | `checkbox`.
-* __position__ : Position of the menu item to be added. One of the values `first` | `last` (default) | `before` | `after`.
-* __relative-id__ : Relative menu item id for position `before` and `after`.
+* **id** : Unique id of the menu item. If `id` is omitted, `command` id will be used for the id.
+* **label** : Label for the menu item.
+* **command** : A command id to be executed when the menu item selected.
+* **submenu** : Submenu items of this menu item.
+* **type** : Type of the menu item. One of the values `separator` \| `checkbox`.
+* **position** : Position of the menu item to be added. One of the values `first` \| `last` \(default\) \| `before` \| `after`.
+* **relative-id** : Relative menu item id for position `before` and `after`.
 
 If you want to add a separator:
 
-```json
+```javascript
 { "type": "separator" }
 ```
 
 ### Adding menu items in existing menu items
 
-You can add menu items to an existing menu such as __File__, __Edit__, __Tools__, etc.
+You can add menu items to an existing menu such as **File**, **Edit**, **Tools**, etc.
 
-We're going to add two sub menu items under the existing __Tools__ menu item. All menu items have unique ID. If `id` matches an existing id of menu item, submenu items will be added under the existing menu item.
+We're going to add two sub menu items under the existing **Tools** menu item. All menu items have unique ID. If `id` matches an existing id of menu item, submenu items will be added under the existing menu item.
 
-```json
+```javascript
 {
   "menu": [
     {
@@ -110,7 +106,7 @@ Each menu item has three states _checked_, _enabled_, and _visible_. Here we're 
 
 Checked state can be changed only for the menu item defined with type is `checkbox`. To change checked states of menu items as follow.
 
-```js
+```javascript
 // Change checked states
 var checkedStates = {
   'format.show-shadow': true,  //checked
@@ -119,9 +115,9 @@ var checkedStates = {
 app.menu.updateStates(null, null, checkedState)
 ```
 
-You can also change the visible and enabled states of the menu item __Edit > Select All__ as follow:
+You can also change the visible and enabled states of the menu item **Edit &gt; Select All** as follow:
 
-```js
+```javascript
 // Change visible state
 app.menu.updateStates({ 'edit.select-all': false }, null, null)  // hide
 app.menu.updateStates({ 'edit.select-all': true }, null, null)   // show
@@ -135,7 +131,7 @@ app.menu.updateStates(null, { 'edit.select-all': true }, null)   // enabled
 
 Adding menu items to context menus is basically same with application menu. One difference is that there is only one application menu, but there may be multiple context menus. So the context menus are defined in the menu JSON files as follow:
 
-```json
+```javascript
 {
   "context-menu": {
     "<dom-selector-for-context-menu1>": [],
@@ -148,15 +144,16 @@ Adding menu items to context menus is basically same with application menu. One 
 [DOM selector](https://www.w3.org/TR/selectors-api/) is used to specify a context menu. This means the context menu will be popup when user click mouse right button on the DOM element specified by the DOM selector.
 
 There are three predefined context menus with DOM selectors.
-  * `#diagram-canvas` : [Diagram Area](/user-interface.md#diagram-area)
-  * `#model-explorer-holder .treeview` : [Model Explorer](/user-interface.md#model-explorer)
-  * `#working-diagrams ul.listview` : [Working Diagrams](/user-interface.md#working-diagrams).
+
+* `#diagram-canvas` : [Diagram Area](../user-guide/user-interface.md#diagram-area)
+* `#model-explorer-holder .treeview` : [Model Explorer](../user-guide/user-interface.md#model-explorer)
+* `#working-diagrams ul.listview` : [Working Diagrams](../user-guide/user-interface.md#working-diagrams).
 
 ### Adding menu items in a predefined context menu
 
-We're going to add a menu item to a predefined context menu of __Diagram Area__.
+We're going to add a menu item to a predefined context menu of **Diagram Area**.
 
-```json
+```javascript
 {
   "context-menu": {
     "#diagram-canvas": [
@@ -174,11 +171,11 @@ Click mouse right button on diagram area, you will see the added menu item in th
 
 ### Adding a new context menu
 
-StarUML even allows adding a new Context Menu for a specific DOM element. In here, instead of adding new DOM element we will use an existing DOM element, [Statusbar](/user-interface.md#statusbar), which doesn't have any context menu.
+StarUML even allows adding a new Context Menu for a specific DOM element. In here, instead of adding new DOM element we will use an existing DOM element, [Statusbar](../user-guide/user-interface.md#statusbar), which doesn't have any context menu.
 
-__Statusbar__ is defined as a DIV element like as `<div id="statusbar" ...></div>`. You can find in __Elements__ tab of __DevTools__ (__Debug > Show DevTools__). We can add a new Context Menu having only one menu item for __Statusbar__ as follow:
+**Statusbar** is defined as a DIV element like as `<div id="statusbar" ...></div>`. You can find in **Elements** tab of **DevTools** \(**Debug &gt; Show DevTools**\). We can add a new Context Menu having only one menu item for **Statusbar** as follow:
 
-```json
+```javascript
 {
   "context-menu": {
     "#statusbar": [
@@ -192,4 +189,5 @@ __Statusbar__ is defined as a DIV element like as `<div id="statusbar" ...></div
 }
 ```
 
-Click mouse right button on __Statusbar__, you will see the new context menu.
+Click mouse right button on **Statusbar**, you will see the new context menu.
+

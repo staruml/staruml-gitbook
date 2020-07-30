@@ -1,16 +1,18 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## User Guide
 
-* [Introduction](README.md)
-* [Basic Concepts](basic-concepts.md)
-* [Managing Project](managing-project.md)
-* [Editing Elements](editing-elements.md)
-* [Formatting Diagram](formatting-diagram.md)
-* [Managing Extensions](managing-extensions.md)
-* [User Interface](user-interface.md)
-* [Validation Rules](validation-rules.md)
-* [Keyboard Shortcuts](keyboard-shortcuts.md)
+* [Introduction](user-guide/readme.md)
+* [Basic Concepts](user-guide/basic-concepts.md)
+* [Managing Project](user-guide/managing-project.md)
+* [Editing Elements](user-guide/editing-elements.md)
+* [Formatting Diagram](user-guide/formatting-diagram.md)
+* [Managing Extensions](user-guide/managing-extensions.md)
+* [User Interface](user-guide/user-interface.md)
+* [Validation Rules](user-guide/validation-rules.md)
+* [Keyboard Shortcuts](user-guide/keyboard-shortcuts.md)
 
 ## Working with Diagrams
 
@@ -42,3 +44,4 @@
 * [Defining Preferences](developing-extensions/defining-preferences.md)
 * [Using Dialogs](developing-extensions/using-dialogs.md)
 * [Registering to Extension Registry](developing-extensions/registering-to-extension-registry.md)
+

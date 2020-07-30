@@ -1,16 +1,13 @@
-Sequence Diagram
-================
-
-<!-- toc -->
+# Sequence Diagram
 
 ## Create Sequence Diagram
 
 To create a Sequence Diagram:
 
 1. Select first an element where a new Sequence Diagram to be contained as a child.
-2. Select **Model | Add Diagram | Sequence Diagram** in Menu Bar or select **Add Diagram | Sequence Diagram** in Context Menu.
+2. Select **Model \| Add Diagram \| Sequence Diagram** in Menu Bar or select **Add Diagram \| Sequence Diagram** in Context Menu.
 
-> __See also__
+> **See also**
 >
 > [UML Sequence Diagram](http://www.uml-diagrams.org/sequence-diagrams.html) - For more information about UML Sequence Diagram.
 
@@ -25,7 +22,7 @@ To create a Lifeline:
 1. Select **Lifeline** in **Toolbox**.
 2. Drag on the diagram as the size of Lifeline.
 
-To create a Lifeline from a Classifier (Class, Interface, etc.) by Drag-and-Drop:
+To create a Lifeline from a Classifier \(Class, Interface, etc.\) by Drag-and-Drop:
 
 1. Drag a Classifier from **Explorer**.
 2. Drop on the diagram.
@@ -33,8 +30,10 @@ To create a Lifeline from a Classifier (Class, Interface, etc.) by Drag-and-Drop
 You can use **QuickEdit** for Lifeline by double-click or press `Enter` on a selected Lifeline.
 
 * **Lifeline Expression** : Edit lifeline expression.
+
   _Syntax of Lifeline Expression_
-  ```
+
+  ```text
   lifeline ::= [ '<<' stereotype `>>` ] [ visibility ] name [ '[' selector ']' ] [ ':' type ]
   stereotype ::= (identifier)
   visibility ::= '+' | '#' | '-' | '~'
@@ -42,6 +41,7 @@ You can use **QuickEdit** for Lifeline by double-click or press `Enter` on a sel
   selector ::= (string)
   type ::= (identifier)
   ```
+
 * **Visibility** : Change visibility property.
 * **Add Note** : Add a linked note.
 * **Select Type** : Select a type of the lifeline.
@@ -54,13 +54,12 @@ You can use **QuickEdit** for Lifeline by double-click or press `Enter` on a sel
 * **Add Message from Gate** : Add a message from a gate.
 * **Add Message to Gate** : Add a message to a gate.
 
-
 ## Message
 
-To create a Message (or Self Message):
+To create a Message \(or Self Message\):
 
-1. Select **Message** (or **Self Message**) in **Toolbox**.
-2. Drag from a Lifeline and drop on another Lifeline. (Just click on a Lifeline if you want to create a self message.)
+1. Select **Message** \(or **Self Message**\) in **Toolbox**.
+2. Drag from a Lifeline and drop on another Lifeline. \(Just click on a Lifeline if you want to create a self message.\)
 
 You can change the kind of message by setting `messageSort` property in **Property Editor**:
 
@@ -79,8 +78,10 @@ You can use custom sequence numbers instead of auto-generated integer sequence n
 You can use **QuickEdit** for Message by double-click or press `Enter` on a selected Message.
 
 * **Message Expression** : Edit message expression.
+
   _Syntax of Message Expression_
-  ```
+
+  ```text
   message ::= [ '<<' stereotype `>>` ] [ visibility ] [ target '=' ] name [ '(' arguments ')' ]
   stereotype ::= (identifier)
   visibility ::= '+' | '#' | '-' | '~'
@@ -88,6 +89,7 @@ You can use **QuickEdit** for Message by double-click or press `Enter` on a sele
   name ::= (identifier)
   arguments ::= (string)
   ```
+
 * **Visibility** : Change visibility property.
 * **Add Note** : Add a linked note.
 * **Select Operation** : Select an operation as a signature of the message.
@@ -96,7 +98,6 @@ You can use **QuickEdit** for Message by double-click or press `Enter` on a sele
 * **Create Signal** : Create a signal as a signature of the message.
 * **Add Reply Message** : Add a reply message.
 
-
 ## Endpoint
 
 To create an Endpoint:
@@ -104,14 +105,12 @@ To create an Endpoint:
 1. Select **Endpoint** in **Toolbox**.
 2. Click at the position on the diagram.
 
-
 ## Gate
 
 To create a Gate:
 
 1. Select **Gate** in **Toolbox**.
 2. Click at the position on the diagram.
-
 
 ## State Invariant
 
@@ -131,7 +130,7 @@ To create a Continuation:
 1. Select **Continuation** in **Toolbox**.
 2. Drag on the diagram as the size of Continuation.
 
-You can use **QuickEdit** for Model Element (See [Model Element](/working-with-diagrams/class-diagram.md#model-element)).
+You can use **QuickEdit** for Model Element \(See [Model Element](class-diagram.md#model-element)\).
 
 ## Combined Fragment
 
@@ -155,19 +154,20 @@ You can change the operator by setting `interactionOperator` property in **Prope
 * `consider` : consider
 * `break` : break
 
-
 You can use **QuickEdit** for Combined Fragment by double-click or press `Enter` on a selected Combined Fragment.
 
 * **Name Expression** : Edit name expression.
+
   _Syntax of Name Expression_
-  ```
+
+  ```text
   expression ::= [ '<<' stereotype `>>` ] [ visibility ] name
   stereotype ::= (identifier)
   visibility ::= '+' | '#' | '-' | '~'
   name ::= (identifier)
   ```
-* **Add Operand** : Add an interaction operand.
 
+* **Add Operand** : Add an interaction operand.
 
 ## Interation Operand
 
@@ -175,10 +175,10 @@ You can use **QuickEdit** for Interaction Operand by double-click or press `Ente
 
 * **Guard** : Edit guard property.
 
-
 ## Interaction Use
 
 To create a Interaction Use:
 
 1. Select **Interaction Use** in **Toolbox**.
 2. Drag on the diagram as the size of Interaction Use.
+

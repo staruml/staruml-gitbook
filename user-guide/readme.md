@@ -2,7 +2,7 @@
 
 StarUML is a sophisticated software modeler aimed to support _agile_ and _concise_ modeling.
 
-![](.gitbook/assets/screenshot.png)
+![](../.gitbook/assets/screenshot.png)
 
 The main targets of users are:
 
