@@ -14,6 +14,7 @@ The key features of StarUML are:
 
 * Multi-platform support \(MacOS, Windows and Linux\)
 * UML 2.x standard compliant
+* SysML support
 * Entity-Relationship diagram \(ERD\)
 * Data-flow diagram \(DFD\)
 * Flowchart diagram
@@ -21,6 +22,7 @@ The key features of StarUML are:
 * Modern UX
 * Dark and light themes
 * Retina \(High-DPI\) display support
+* MacPro Pro's Touch Bar support
 * Model-driven development
 * Open APIs
 * Various third-party extensions
