@@ -16,10 +16,10 @@ function handleShowMessage() {
 }
 ```
 
-Finally, we need to register this command to application by calling `app.commands.register` method. The first parameter is the ID of the command and the second is the handler function.
+Finally, we need to register this command to application by calling `app.commands.register` method. The first parameter is the ID of the command and the second is the handler function and the third \(optional\) is the display name of the command \(Shown in [Command Palette](../user-guide/user-interface.md#command-palette)\).
 
 ```javascript
-app.commands.register('helloworld:show-message', handleShowMessage)
+app.commands.register('helloworld:show-message', handleShowMessage, 'Show Message')
 ```
 
 ## Calling a command

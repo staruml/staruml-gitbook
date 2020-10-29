@@ -41,7 +41,7 @@
 | Format &gt; Word Wrap | `Cmd+Shift+W` | `Ctrl+Shift+W` | `Ctrl+Shift+W` |
 | Format &gt; Show Visibility | `Cmd+Shift+V` | `Ctrl+Shift+V` | `Ctrl+Shift+V` |
 | Format &gt; Show Namespace | `Cmd+Shift+N` | `Ctrl+Shift+N` | `Ctrl+Shift+N` |
-| Format &gt; Show Property | `Cmd+Shift+P` | `Ctrl+Shift+P` | `Ctrl+Shift+P` |
+| Format &gt; Show Property | `Cmd+Shift+B` | `Ctrl+Shift+B` | `Ctrl+Shift+B` |
 | Format &gt; Show Type | `Cmd+Shift+Y` | `Ctrl+Shift+Y` | `Ctrl+Shift+Y` |
 | Format &gt; Show Multiplicity | `Cmd+Shift+M` | `Ctrl+Shift+M` | `Ctrl+Shift+M` |
 | Format &gt; Show Operation Signature | `Cmd+Shift+G` | `Ctrl+Shift+G` | `Ctrl+Shift+G` |
@@ -51,6 +51,7 @@
 | Format &gt; Suppress Literals | `Cmd+Shift+T` | `Ctrl+Shift+T` | `Ctrl+Shift+T` |
 | Format &gt; Suppress Columns | `Cmd+Shift+U` | `Ctrl+Shift+U` | `Ctrl+Shift+U` |
 | Model &gt; Find | `Cmd+F` | `Ctrl+F` | `Ctrl+F` |
+| View &gt; Command Palette... | `Cmd-Shift-P` | `Ctrl-Shift-P` | `Ctrl-Shift-P` |
 | View &gt; Close Diagram | `F4` | `F4` | `F4` |
 | View &gt; Close Other Diagrams | `Cmd+F4` | `Ctrl+F4` | `Ctrl+F4` |
 | View &gt; Close All Diagrams | `Shift+F4` | `Shift+F4` | `Shift+F4` |
@@ -74,30 +75,5 @@
 | Debug &gt; Show DevTools | `Shift+Option+T` | `Shift+Alt+T` | `Shift+Alt+T` |
 | Debug &gt; Reload | `Cmd+R` | `Ctrl+R` | `Ctrl+R` |
 
-## Making Custom Keymaps
 
-If you want to make custom keymaps, you can create `keymap.json` at the user configuration path:
-
-* `/Users/<user>/Library/Application Support/StarUML` for Mac OS.
-* `C:\Users\<user>\AppData\Roaming\StarUML` for Windows.
-* `~/.config/StarUML` for Linux.
-
-You can get how to edit the custom keymap file \(`keymap.json`\) at [Keymaps](../developing-extensions/keymaps.md).
-
-Here is an example:
-
-```javascript
-{
-  "cmdctrl-alt-1": null,
-  "cmdctrl-alt-g": "view:show-grid"
-}
-```
-
-The first entry is to release the `Ctrl+Alt+1` \(`Cmd+Option+1` in MacOS\) key binding and the second entry is to change key binding of **View &gt; Show Grid** \(Command ID is `view:show-grid`\) to `Ctrl+Alt+G` \(`Cmd+Option+G` in MacOS\).
-
-If you want to know all command IDs, enter the following expression at **Console** \(Debug &gt; Show DevTools &gt; Console tab\).
-
-```javascript
-Object.keys(app.commands.commands)
-```
 

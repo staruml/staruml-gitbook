@@ -134,3 +134,13 @@ If you want to install an extension directly from Github URL, Select **Install F
 
 ![](../.gitbook/assets/extension-manager-dialog.png)
 
+## Tag Editor
+
+Tag Editor is a convenient tool to manage Tags for an element. It shows all Attributes of the Stereotype assigned to the element, so it is easy to create Tags corresponding Stereotype's Attributes. It also shows all Tags which is not associated with a particular a Stereotype's Attribute. To open Tag Editor, select **Model \| Tag Editor...** in Menu Bar or press key `Cmd+T` in macOS or `Ctrl+T` in Windows and Linux.
+
+![](../.gitbook/assets/tag-editor.png)
+
+## Command Palette
+
+Command Palette allows to search and execute commands supported by default or installed extensions. To popup Command Palette, select **View \| Command Palette...** in Menu Bar or press key `Cmd+Shift+P` in macOS or `Ctrl+Shift+P` in Windows and Linux.
+
