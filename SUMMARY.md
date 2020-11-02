@@ -54,7 +54,7 @@
 * [Menus](developing-extensions/menus.md)
 * [Keymaps](developing-extensions/keymaps.md)
 * [Accessing Elements](developing-extensions/accessing-elements.md)
-* [Creating, Deleting and Modifying Elements](developing-extensions/creating-and-modifying-elements.md)
+* [Creating, Deleting and Modifying Elements](developing-extensions/creating-deleting-and-modifying-elements.md)
 * [Working with Selections](developing-extensions/working-with-selection.md)
 * [Defining Preferences](developing-extensions/defining-preferences.md)
 * [Using Dialogs](developing-extensions/using-dialogs.md)
