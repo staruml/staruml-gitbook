@@ -1,4 +1,4 @@
-# Creating and Modifying Elements
+# Creating, Deleting and Modifying Elements
 
 In this chapter, we're goint to learn how to create and modify elements. The most important is that you **should not** create or modify elements directly like `var class1 = new UMLClass()` or `class1.name = "New Name"` because all changes should be done via _operations_ which supports by undo and redo.
 
@@ -180,6 +180,25 @@ var options = {
 
 // Create a tag to the selected element
 var tag1 = app.factory.createModel(options)
+```
+
+## Deleting elements
+
+To delete some elements, call `app.engine.deleteElements` function with model and view elements as arguments.
+
+```javascript
+// Delete selected model elements
+var models = app.selections.getSelectedModels()
+app.engine.deleteElements(models, [])
+
+// Or, delete selected view elements
+var views = app.selections.getSelectedViews()
+app.engine.deleteElements([], views)
+
+// Delete all selected model and view elements
+var models = app.selections.getSelectedModels()
+var views = app.selections.getSelectedViews()
+app.engine.deleteElements(models, views)
 ```
 
 ## Modifying elements
