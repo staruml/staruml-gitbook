@@ -9,6 +9,7 @@
 * [Managing Project](user-guide/managing-project.md)
 * [Editing Elements](user-guide/editing-elements.md)
 * [Formatting Diagram](user-guide/formatting-diagram.md)
+* [Annotation Elements](user-guide/annotation-elements.md)
 * [Managing Extensions](user-guide/managing-extensions.md)
 * [User Interface](user-guide/user-interface.md)
 * [Validation Rules](user-guide/validation-rules.md)

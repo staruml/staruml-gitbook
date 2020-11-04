@@ -527,3 +527,25 @@ To create a Frame view of a particular model element:
 2. Drag on the diagram as the size of Frame.
 3. Select a model element which the Frame represents in **Element Picker Dialog**
 
+## Tag
+
+To add a Tag of an element:
+
+1. Select an element to add a Tag.
+2. Select **Model \| Add \| Tag** in Menu Bar or **Add \| Tag** in Context Menu.
+
+You can select one of tag kinds: **string**, **reference**, **boolean**, **number**, or **hidden**. The `value` property corresponds to **string** and **hidden** kinds. The `reference` property corresponds to **reference** kind. The `checked` property corresponds to **boolean** kind. The `number` property corresponds to **number** kind.
+
+The Tags \(except for **hidden** kind\) can be shown in views by checking **Format** &gt; **Show Property** menu item.
+
+You can manage Tags conveniently in [Tag Editor](../user-guide/user-interface.md#tag-editor) with relationships of Stereotype's Attributes.
+
+## Constraint
+
+To add a Constraint of an element:
+
+1. Select an element to add a Constraint.
+2. Select **Model \| Add \| Constraint** in Menu Bar or **Add \| Constraint** in Context Menu.
+
+You can create a Constraint view on a diagram by drag and drop from Model Explorer.
+
