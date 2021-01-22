@@ -1,6 +1,6 @@
 # Creating, Deleting and Modifying Elements
 
-In this chapter, we're goint to learn how to create and modify elements. The most important is that you **should not** create or modify elements directly like `var class1 = new UMLClass()` or `class1.name = "New Name"` because all changes should be done via _operations_ which supports by undo and redo.
+In this chapter, we're going to learn how to create and modify elements. The most important is that you **should not** create or modify elements directly like `var class1 = new UMLClass()` or `class1.name = "New Name"` because all changes should be done via _operations_ which supports by undo and redo.
 
 ## Creating elements
 
